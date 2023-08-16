@@ -28,7 +28,7 @@ exports.sendOTP = async (req, res) => {
     }
 
     // Generate a random 6-digit OTP
-    const otp = Math.floor(100000 + Math.random() * 900000);
+    const otp = Math.floor(1000 + Math.random() * 9000);
 
     // Save the OTP to the user in the database
     const userPayload = { phoneNumber, otp };
